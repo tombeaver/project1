@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Marnies Cakes and Sweets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Dietary Needs</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+            <section class="banner">
+                <section id="container">
+                    <section id="carousel">
+                        <img id="first" src="img/carousel/wed-cake-01.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-02.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-03.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-04.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-05.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-06.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-07.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-01.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-02.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-03.jpg" height="200px">
+                        <img src="img/carousel/wed-cake-04.jpg" height="200px">
+                    </section>
+                </section>
+            </section>
+            
+            <section class="logo">
+                <img src="img/logo/logo-1.png" width="200px">
+            </section>
+            
+            <section class="side-bar">
+                <p></p>
+            </section>
+            
+        </nav>
+        
+        <section id="content">
+            <img src="img/logo/logo-3.png" width="200px">
+            
+<!-- This section will hide when the "Get Started" button is clicked -->
+            <div class="welcome">
+                
+                <h1>Easy Online Ordering!</h1>
+                <button onclick="next('.steps1')" id="start" name="start">Get Started!</button>
+                <p>Ordering cake has never been easier! With our easy to use website, we'll take you through step by step to make sure you recieve the cake you want and deserve. Make your celebration extra special with Marnie's Cakes and Sweets!</p>
+                
+            </div>
+            
+<!-- When "Get Started" is clicked, the first step will be revealed -->
+            <div class="steps1">
+                <h1>What size would you like?</h1>
+                <p>(Choosing two or more from the list below will result in a tiered cake)</p>
+                
+                <input type="checkbox" name="size" class="price" id="Six-Inch-Cake" value="30.00"><label for="Six-Inch-Cake"><img src="img/size/6.png"></label>
+                <input type="checkbox" name="size" class="price" id="Eight-Inch-Cake" value="35.00"><label for="Eight-Inch-Cake"><img src="img/size/8.png"></label>
+                <input type="checkbox" name="size" class="price" id="Ten-Inch-Cake" value="40.00"><label for="Ten-Inch-Cake"><img src="img/size/10.png"></label>
+                <input type="checkbox" name="size" class="price" id="Twelve-Inch-Cake" value="45.00"><label for="Twelve-Inch-Cake"><img src="img/size/12.png"></label>
+				</br>
+                <input type="checkbox" name="size" class="price" id="Fourteen-Inch-Cake" value="50.00"><label for="Fourteen-Inch-Cake"><img src="img/size/14.png"></label>
+                <input type="checkbox" name="size" class="price" id="Sixteen-Inch-Cake" value="60.00"><label for="Sixteen-Inch-Cake"><img src="img/size/16.png"></label>
+                <input type="checkbox" name="size" class="price" id="Eighteen-Inch-Cake" value="65.00"><label for="Eighteen-Inch-Cake"><img src="img/size/18.png"></label>
+                <input type="checkbox" name="size" class="price" id="Twenty-Inch-Cake" value="70.00"><label for="Twenty-Inch-Cake"><img src="img/size/20.png"></label>
+                <input type="checkbox" name="size" class="price" id="Twenty-Two-Inch-Cake" value="80.00"><label for="Twenty-Two-Inch-Cake"><img src="img/size/22.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="next('.steps2')" class="next" name="next">Next</button>
+            
+            </div>
+
+            <div class="steps2">
+                <h1>What cake type would you like?</h1>
+                
+                <input type="radio" name="type" class="add" id="Vanilla-Type" value="5"><label for="Vanilla-Type"><img src="img/type/vanilla.png"></label>
+                <input type="radio" name="type" class="add" id="Chocolate-Type" value="5"><label for="Chocolate-Type"><img src="img/type/chocolate.png"></label>
+                <input type="radio" name="type" class="add" id="Strawberry-Type" value="5"><label for="Strawberry-Type"><img src="img/type/strawberry.png"></label>
+                <br>
+                <input type="radio" name="type" class="add" id="Butterscotch-Type" value="7" ><label for="Butterscotch-Type"><img src="img/type/butterscotch.png"></label>
+                <input type="radio" name="type" class="add" id="Marbled-Type" value="10"><label for="Marbled-Type"><img src="img/type/marbled.png"></label>
+                <input type="radio" name="type" class="add" id="Red-Velvet-Type" value="10"><label for="Red-Velvet-Type"><img src="img/type/velvet.png"></label>
+                <input type="radio" name="type" class="add" id="Carrot-Type" value="12"><label for="Carrot-Type"><img src="img/type/carrot.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+				<button onclick="next('.steps3')" class="next" name="next">Next</button>
+				<button onclick="next('.steps1')" class="next" name="next">Back</button>
+
+            
+            </div>
+            
+            <div class="steps3">
+                <h1>What icings would you like?</h1>
+                
+                <input type="radio" name="icing" class="add" id="buttercream" value="2"><label for="buttercream"><img src="img/icing/buttercream.png"></label>
+                <input type="radio" name="icing" class="add" id="glossy-glaze" value="2"><label for="glossy-glaze"><img src="img/icing/glossy.png"></label>
+                <input type="radio" name="icing" class="add" id="cream-cheese" value="5"><label for="cream-cheese"><img src="img/icing/creamcheese.png"></label>
+                </br>
+                <input type="radio" name="icing" class="add" id="fudge" value="5"><label for="fudge"><img src="img/icing/fudge.png"></label>
+                <input type="radio" name="icing" class="add" id="meringue" value=""><label for="meringue"><img src="img/icing/meringue.png"></label>
+                <input type="radio" name="icing" class="add" id="ganache" value="5"><label for="ganache"><img src="img/icing/ganache.png"></label>
+                <input type="radio" name="icing" class="add" id="rolled-fondant" value="7"><label for="rolled-fondant"><img src="img/icing/rolledfondant.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="next('.steps4')" class="next" name="next">Next</button>
+				<button onclick="next('.steps2')" class="next" name="next">Back</button>
+
+            
+            </div>
+    
+            <div class="steps4">
+                <h1>What fillings would you like?</h1>
+                
+                <input type="radio" name="fillins" class="add" id="vanilla-custard" value="3"><label for="vanilla-custard"><img src="img/filling/custard.png"></label>
+                <input type="radio" name="fillins" class="add" id="pastry-cream" value="3"><label for="pastry-cream"><img src="img/filling/cream.png"></label>
+                <input type="radio" name="fillins" class="add" id="white-chocolate" value="6"><label for="white-chocolate"><img src="img/filling/wchocolate.png"></label>
+                <input type="radio" name="fillins" class="add" id="chocolate-mousse" value="6"><label for="chocolate-mousse"><img src="img/filling/cmousse.png"></label>
+                <input type="radio" name="fillins" class="add" id="english-lemon-curd" value="6"><label for="english-lemon-curd"><img src="img/filling/englishlemon.png"></label>
+                </br>
+                <input type="radio" name="fillins" class="add" id="chocolate-ganache" value="6"><label for="chocolate-ganache"><img src="img/filling/cganache.png"></label>
+                <input type="radio" name="fillins" class="add" id="fresh-berries" value="8"><label for="fresh-berries"><img src="img/filling/freshberries.png"></label>
+                <input type="radio" name="fillins" class="add" id="raspberry-mousse" value="7"><label for="raspberry-mousse"><img src="img/filling/rmousse.png"></label>
+                <input type="radio" name="fillins" class="add" id="belgium-chocolate" value="8"><label for="belgium-chocolate"><img src="img/filling/belgium.png"></label>
+                <input type="radio" name="fillins" class="add" id="cannoli" value="10"><label for="cannoli"><img src="img/filling/cannoli.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="next('.steps5')" class="next" name="next">Next</button>
+				<button onclick="next('.steps3')" class="next" name="next">Back</button>
+
+            
+            </div>
+            
+            <div class="steps5">
+                <h1>What topper would you like?</h1>
+                
+                <input type="radio" name="topper" class="price" id="classic" value="50.00"><label for="classic"><img src="img/topper/classic.png"></label>
+                <input type="radio" name="topper" class="price" id="sparklers" value="70.00"><label for="sparklers"><img src="img/topper/sparklers.png"></label>
+                <input type="radio" name="topper" class="price" id="edible-small" value="120.00"><label for="edible-small"><img src="img/topper/small.png"></label>
+                <input type="radio" name="topper" class="price" id="edible-large" value="200.00"><label for="edible-large"><img src="img/topper/large.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="next('.steps6')" class="next" name="next">Next</button>
+				<button onclick="next('.steps4')" class="next" name="next">Back</button>
+ 
+            
+            </div>
+            
+            <div class="steps6">
+                <h1>What decorations would you like?</h1>
+                
+                <input type="radio" name="decorations" class="add" id="piped-icing" value="5"><label for="piped-icing"><img src="img/decorations/pipedicing.png"></label>
+                <input type="radio" name="decorations" class="add" id="caramel-crumble" value="10"><label for="caramel-crumble"><img src="img/decorations/caramelcrum.png"></label>
+                <input type="radio" name="decorations" class="add" id="chocolate-crumble" value="10"><label for="chocolate-crumble"><img src="img/decorations/chocolatecrum.png"></label>
+                <input type="radio" name="decorations" class="add" id="edible-pearls" value="15"><label for="edible-pearls"><img src="img/decorations/ediblepearls.png"></label>
+                <input type="radio" name="decorations" class="add" id="mirror-glaze" value="15"><label for="mirror-glaze"><img src="img/decorations/mirrorglaze.png"></label>
+                </br>
+                <input type="radio" name="decorations" class="add" id="layered-buttercream" value="15"><label for="layered-buttercream"><img src="img/decorations/layeredbutter.png"></label>
+                <input type="radio" name="decorations" class="add" id="buttercream-folding" value="15"><label for="buttercream-folding"><img src="img/decorations/butterfolding.png"></label>
+                <input type="radio" name="decorations" class="add" id="floral-lace" value="15"><label for="floral-lace"><img src="img/decorations/florallaced.png"></label>
+                <input type="radio" name="decorations" class="add" id="fruit-decor" value="20"><label for="fruit-decor"><img src="img/decorations/fruitdecor.png"></label>
+                <input type="radio" name="decorations" class="add" id="piped-florals" value="20"><label for="piped-florals"><img src="img/decorations/pipedflorals.png"></label>
+                <input type="radio" name="decorations" class="add" id="gumpaste-florals" value="25"><label for="gumpaste-florals"><img src="img/decorations/gumpasteflorals.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="next('.steps7')" class="next" name="next">Next</button>
+				<button onclick="next('.steps5')" class="next" name="next">Back</button>
+
+            
+            </div>
+            
+            <div class="steps7">
+                <h1>Would you like your cake pre-cut?</h1>
+                
+                <input type="radio" name="cut" class="price" id="precut" value="20.00"><label for="precut"><img src="img/cut/precut.png"></label>
+                <input type="radio" name="cut" class="price" id="uncut" value="0"><label for="uncut"><img src="img/cut/uncut.png"></label>
+                
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <button onclick="total()" class="next" name="next">Finish</button>
+				<button onclick="next('.steps6')" class="next" name="next">Back</button>
+
+            
+            </div>
+
+            <div class="total">
+                <h1>The total price for your cake is...</h1>
+                <button onclick="location.reload()" class="restart" name="restart">Restart...</button>
+                <h2></h2>
+            </div>
+
+
+    
+    
+    
+    
+    
+        </section>
+    </section>
+
+<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+<script src="js/main.js"></script>    
+</body>
+    
+</html>
+
+
